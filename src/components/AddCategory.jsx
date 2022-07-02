@@ -18,13 +18,20 @@ export const AddCategory = ({ addCategory }) => {
     }
 
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit} style={{width: "100%",
+        justifyContent: "center",
+        display: "flex"}}>
         <input 
             type='text'
             placeholder='Buscar Gif'
             value={inputValue}
             onChange={handleInputChange}
-        />       
+        />
+        <button type="submit" style={{padding: "0.5em",
+    border: "none",
+    backgroundColor: "rgb(243 90 90)"}}><div style={{display: "flex"}}><img src="https://giphy.com/static/img/search-icon.svg" width="30" style={{border: "none",
+    backgroundColor: "rgb(243 90 90)",
+    cursor: "pointer"}}/></div></button>     
     </form>
   )
 }

@@ -20,7 +20,7 @@ export const AddCategory = ({ addCategory }) => {
   return (
     <form onSubmit={handleSubmit} style={{width: "100%",
         justifyContent: "center",
-        display: "flex"}}>
+        display: "flex"}} aria-query="textbox" role="form"> 
         <input 
             type='text'
             placeholder='Buscar Gif'

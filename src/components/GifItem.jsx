@@ -11,7 +11,8 @@ export const GifItem = ({title, url}) => {
     <Modal onOpen={showModal}>
       <div className="card" >
           <img src={url} alt="gif"/>
-          <p>{title}</p>
+          <p data-testid="test-title"
+>{title}</p>
       </div>
     </Modal>
     { isOpen && 

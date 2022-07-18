@@ -22,7 +22,13 @@ describe('Test en <GifItem />', () => {
 
     });
 
+    test('Debe encontrar por test-id', () => {
+        
+        const {getByTestId} = render( <GifItem title={title} url={url} /> );
 
+        expect( getByTestId('test-title').innerHTML ).toContain(title);
+
+    });
 
     test('Debe mostrar URL y ALT', () => {
         

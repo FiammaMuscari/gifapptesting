@@ -29,12 +29,12 @@ export const GifApp = () => {
       {/* Input */}
       <AddCategory addCategory={handleAddCategory} />
       {/* Listado de Gif */}
-      <button className="reset" onClick={handleRemoveAll}>Reset</button>
+      <button className="reset" onClick={handleRemoveAll} data-testid="buttonReset">Reset</button>
       
       {
       React.Children.toArray(
       categories.map((category) => (
-                <><button className="delete" onClick={()=>handleOnRemove(category)}>eliminar</button><GifGrid className="categories" key={category} category={category}/></>
+                <><button className="delete" onClick={()=>handleOnRemove(category)} data-testid="buttonDelete" >eliminar</button><GifGrid className="categories" key={category} category={category}/></>
       ))
     )}
     </>

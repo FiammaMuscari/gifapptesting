@@ -26,6 +26,7 @@ export const AddCategory = ({ addCategory }) => {
             placeholder='Buscar Gif'
             value={inputValue}
             onChange={handleInputChange}
+            data-testid="inputcategory"
         />
         <button type="submit" style={{padding: "0.5em",
     border: "none",
